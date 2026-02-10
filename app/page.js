@@ -1,65 +1,60 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="w-screen">
+      <section className="h-svh p-4">
+        <nav className="font-medium text-4xl text-white mix-blend-difference">
+          <ul className="flex flex-row gap-1">
+            <li className="relative">
+              Work
+              <span className="absolute -bottom-3 right-0 text-xs jb-mono">
+                01
+              </span>
+            </li>
+            ,
+            <li className="relative">
+              About
+              <span className="absolute -bottom-3 right-0 text-xs jb-mono">
+                09
+              </span>
+            </li>
+            ,
+            <li className="relative">
+              Projects
+              <span className="absolute -bottom-3 right-0 text-xs jb-mono">
+                12
+              </span>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="absolute inset-0 -z-10">
+          <video
+            src="/DTS.mov"
+            muted
+            autoPlay
+            loop
+            className="object-cover h-full w-full grayscale"
+          />
+        </div>
+
+        <div className="absolute bottom-4 right-4 jb-mono text-white mix-blend-difference text-[11px]">
+          <p className="max-w-[70ch]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+            ligula massa, varius a, semper congue, euismod non, mi. Proin
+            porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+            fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
+            scelerisque vitae, consequat in, pretium a, enim. Pellentesque
+            congue Praesent dapibus, neque id cursus faucibus, tortor neque
+            egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+            volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+            luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus.
+            Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla
+            quam, gravida non, commodo a, sodales sit amet, nisi.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
